@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Designed and maintained by GhP-->
+	<!--Based on tutorials, references, and examples at www.w3schools.com. -->
+	<title>Year Deal</title>
+	
+	<!--The <meta> element is used to specify page description, keywords, author, and other metadata.-->
+	<!--Metadata is used by browsers (how to display content), by search engines (keywords), and other web services.-->
+  	<meta charset="utf-8">
+  	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta name="Keywords" content="GhP,Gheorghita,Popovici,technology,energy,open,sustainable">
+  	
+  	<!--script necessary for Google Search Element-->
+  	<script>
+		(function() {
+    			var cx = '003075884909666025808:yl8iu4tionc';
+    			var gcse = document.createElement('script');
+    			gcse.type = 'text/javascript';
+    			gcse.async = true;
+    			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        		'//cse.google.com/cse.js?cx=' + cx;
+    			var s = document.getElementsByTagName('script')[0];
+    			s.parentNode.insertBefore(gcse, s);
+  				})();
+	</script>  	
+	
+	<!--script necessary for Google Analytics-->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-71415926-1', 'auto');
+  		ga('send', 'pageview');
+	</script>  	
+	
+	<!--Some fancy fonts-->
+  	<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">	
+	
+	<!-- Bootstrap-->
+  	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+  	<link rel="stylesheet" href="bootstrap/3.3.6/css/bootstrap.min.css">
+	 
+  	<!--jQuery-->
+  	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+  	<script src="jquery/1.11.3/jquery.min.js"></script>
+
+	<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+  	<script src="bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<link href="GhPStyle.css" rel="stylesheet">
+</head>
+
+<body>
+	
+	<nav id="GhPNavbarScript" class="navbar navbar-default navbar-fixed-top"></nav>
+	
+	<div class="container-fluid text-center">
+		<div class="form-group">
+      		<div class="col-sm-12">
+        		<label class="checkbox">
+        			<input type="checkbox" value="yearDeal" checked disabled> 
+        			Year Deal
+        		</label>
+  			</div>
+  		
+  			<div class="col-sm-4">
+        		<label for="yearDealServiceSelection">Service type:</label>
+  					<select class="form-control" id="yearDealServiceSelection">
+    					<option>Engineering</option>
+    					<option>Information Technology</option>
+    					<option>Energy Management</option>
+  					</select>
+  			</div>
+  			
+  			<div class="col-sm-4">
+        		<label for="yearDealActionSelection">Action type:</label>
+  					<select class="form-control" id="yearDealActionSelection">
+    					<option>Technology Development</option>
+    					<option>Software Development</option>
+    					<option>Modelling & Simulations </option>
+  					</select>
+  			</div>
+  			
+  			<div class="col-sm-4">
+        		<label for="yearDealNumberSelection">Number of years:</label>
+  					<select class="form-control" id="yearDealNumberSelection">
+    					<option>1 year</option>
+  					</select>
+  			</div>
+  		
+  			<div class="col-sm-12">
+  				<label for="comment">Assignment description:</label>
+  				<textarea class="form-control" id="assignmentDescription" placeholder="Please type in a short description of the assignment ..." rows="5"></textarea>
+  			</div>
+  			
+  			<br>
+  			<button onclick="submitDayDealRequest(); return false" class="btn btn-lg">Submit</button>
+  		
+  		</div>		
+  	</div>
+  	
+  	<div class="container-fluid text-center">
+  		<footer id="GhPFooterScript"></footer>
+  	</div>
+  	
+  	<script src="GhPNavbar.js"></script>
+  	<script src="GhPFooter.js"></script>
+  	
+</body>
+</html>

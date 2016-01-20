@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Designed and maintained by GhP-->
+	<!--Based on tutorials, references, and examples at www.w3schools.com. -->
+	<title>Day Deal Booking Form</title>
+	
+	<!--The <meta> element is used to specify page description, keywords, author, and other metadata.-->
+	<!--Metadata is used by browsers (how to display content), by search engines (keywords), and other web services.-->
+  	<meta charset="utf-8">
+  	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--Some fancy fonts-->
+  	<!--<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">-->
+  	<!--<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">-->	
+	
+	<!-- Bootstrap-->
+  	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+  	<link rel="stylesheet" href="bootstrap/3.3.6/css/bootstrap.min.css">
+	 
+  	<!--jQuery-->
+  	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+  	<script src="jquery/1.11.3/jquery.min.js"></script>
+
+	<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+  	<script src="bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<link href="GhPStyle.css" rel="stylesheet">
+</head>
+
+<body>
+	
+	<nav id="GhPNavbarScript" class="navbar navbar-default navbar-fixed-top"></nav>
+	
+	<form action="" method="GET">
+		<fieldset>
+			<legend>Personal Details</legend>
+			<label for="name">Username: </label><input type="text" name="username" id="name" required autofocus placeholder="Your username" pattern="[a-zA-Z]{3,}" title="Please enter more than three letters">
+			<label for="email">Email: </label><input type="text" name="email" id="email" required placeholder="Your Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="Please enter in a vaild email address">
+			<label for="phone">Phone: </label><input type="tel" name="phone" id="phone" required placeholder="Please enter in your phone number" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" title="Please enter in a phone number in this format: #### ### ###">
+			<select name="country" required>
+				<option value=""></option>
+				<option value="Belgium">Belgium</option>
+				<option value="France">France</option>
+				<option value="Germany">Germany</option>
+				<option value="Luxemburg">Luxemburg</option>
+				<option value="Netherlands">Netherlands</option>
+				<option value="Switzerland">Switzerland</option>
+				<option value="Sweden">Sweden</option>
+				<option value="Romania">Romania</option>
+				<option value="UK">UK</option>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Booking Details: </legend>
+			<input type="date" name="date" min="2016-01-01">
+			<input type="number" name="numberOfDays" min="1" max="5">
+			<p>Does this mission require travelling?</p>
+			<input type="radio" name="travel" value="yesTravel">
+			<input type="radio" name="travel" value="noTravel">
+			<br>
+			<input type="checkbox" name="confidentiality" value="yes" checked>
+			<br>
+			<button onclick="window.location.href='GhPSubmit.html'" class="btn btn-lg disabled">Submit</button>
+		</fieldset>
+	</form>
+  	
+  	<div class="container-fluid text-center">
+  		<footer id="GhPFooterScript"></footer>
+  	</div>
+  	
+  	<script src="GhPNavbar.js"></script>
+  	<script src="GhPFooter.js"></script>
+  	
+</body>
+</html>
