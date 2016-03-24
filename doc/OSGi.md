@@ -1,7 +1,5 @@
 ![OSGi](https://www.osgi.org/wp-content/uploads/logo.jpg)
-![Alt text](http://potherca.github.io/StackOverflow/question.13808020.include-an-svg-hosted-on-github-in-markdown/controllers_brief.svg)
-<img src="http://potherca.github.io/StackOverflow/question.13808020.include-an-svg-hosted-on-github-in-markdown/controllers_brief.svg">
-![Alt text](http://ghptech.github.io/doc/Osgi-system-layering.svg)<http://ghptech.github.io/doc/Osgi-system-layering.svg>
+
 The OSGi (Open Services Gateway initiative), is an open standards organization founded in March 1999 that originally specified and maintains the OSGi standard. 
 
 OSGi's vision is the emergence of applications from assembling (dynamically) different reusable components that have no a-priori knowledge of each other.
@@ -33,6 +31,8 @@ The components of the OSGi architecture consist of:
 Modularity is at the core of the OSGi specifications and embodied in the bundle concept. In Java terms, a bundle is a plain old JAR file. However, where in standard Java everything in a JAR is completely visible to all other JARs, OSGi hides everything in that JAR unless explicitly exported. A bundle that wants to use another JAR must explicitly import the parts it needs (no sharing by default).
 
 Though the code hiding and explicit sharing provides many benefits (for example, allowing multiple versions of the same library being used in a single VM), the code sharing was only there to support OSGi services model. The services model is about bundles that collaborate.
+
+![Alt text](http://ghptech.github.io/doc/Osgi-system-layering.svg)<http://ghptech.github.io/doc/Osgi-system-layering.svg>
 
 ##Services
 
