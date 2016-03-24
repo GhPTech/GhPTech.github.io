@@ -28,8 +28,6 @@ The framework is conceptually divided into the following areas:
 * **Security** is a layer that handles the security aspects.
 * **Execution Environment** defines what methods and classes are available in a specific platform.
 
-![OSGi framework](https://raw.githubusercontent.com/ghpopovici/openEMS/master/doc/layering-osgi.png)
-
 ##Bundles
 
 ![OSGi system layering](http://ghptech.github.io/doc/Osgi-system-layering.svg)
