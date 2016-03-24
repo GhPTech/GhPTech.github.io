@@ -1,4 +1,4 @@
-![OSGi](https://www.osgi.org/wp-content/uploads/logo.jpg)
+![OSGi](http://ghptech.github.io/doc/OSGi_Logo.png)
 
 The OSGi (Open Services Gateway initiative), is an open standards organization founded in March 1999 that originally specified and maintains the OSGi standard. 
 
@@ -122,7 +122,7 @@ A bundle can create an object and register it with the OSGi service registry und
 
 A bundle can register a service, it can get a service, and it can listen for a service to appear or disappear. Any number of bundles can register the same service type, and any number of bundles can get the same service. 
 
-![OSGi framework](https://raw.githubusercontent.com/ghpopovici/openEMS/master/doc/OSGi_services.png)
+![OSGi services](http://ghptech.github.io/doc/OSGi_services.png)
 
 Services are dynamic. This means that a bundle can decide to withdraw its service from the registry while other bundles are still using this service. Bundles using such a service must then ensure that they no longer use the service object and drop any references.
 
