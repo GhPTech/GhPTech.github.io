@@ -6,11 +6,15 @@ OSGi's vision is the emergence of applications from assembling (dynamically) dif
 
 #OSGi technology
 
-The OSGi technology is a set of specifications that define a dynamic component system for Java. These specifications enable a development model where applications are (dynamically) composed of many different (reusable) components.
+The OSGi technology is a set of specifications that define a dynamic component system for Java. These specifications enable a development model where applications are (dynamically) composed of many different (reusable) components. 
 
 The OSGi specification describes a modular system and a service platform for the Java programming language that implements a complete and dynamic component model (does not exist in standalone Java/VM environments). Applications or components, coming in the form of bundles for deployment, can be remotely installed, started, stopped, updated, and uninstalled without requiring a reboot. Application life cycle management is implemented via APIs that allow for remote downloading of management policies. The service registry allows bundles to detect the addition of new services, or the removal of services, and adapt accordingly.
 
 The OSGi specifications have evolved beyond the original focus of service gateways, and are now used in applications ranging from mobile phones to the open-source Eclipse IDE. Other application areas include automobiles, industrial automation, building automation, PDAs, grid computing, entertainment, fleet management and application servers.
+
+#OSGi specification process
+
+The OSGi specification is developed by the members in an open process and made available to the public free of charge under the OSGI Sepcification License <https://www.osgi.org/Main/OSGiSpecificationLicense>.
 
 #OSGi architecture
 
