@@ -26,13 +26,14 @@ The components of the OSGi architecture consist of:
 * **Execution Environment** defines what methods and classes are available in a specific platform.
 
 ![OSGi framework](https://raw.githubusercontent.com/ghpopovici/openEMS/master/doc/layering-osgi.png)
+![OSGi system layering](http://ghptech.github.io/doc/Osgi_framework.svg)
 
 ##Modules
 Modularity is at the core of the OSGi specifications and embodied in the bundle concept. In Java terms, a bundle is a plain old JAR file. However, where in standard Java everything in a JAR is completely visible to all other JARs, OSGi hides everything in that JAR unless explicitly exported. A bundle that wants to use another JAR must explicitly import the parts it needs (no sharing by default).
 
 Though the code hiding and explicit sharing provides many benefits (for example, allowing multiple versions of the same library being used in a single VM), the code sharing was only there to support OSGi services model. The services model is about bundles that collaborate.
 
-![Alt text](http://ghptech.github.io/doc/Osgi-system-layering.svg)
+![OSGi system layering](http://ghptech.github.io/doc/Osgi-system-layering.svg)
 
 ##Services
 
@@ -53,4 +54,6 @@ Though the service registry accepts any object as a service, the best way to ach
 ##Deployment
 
 Bundles are deployed on an OSGi framework, the bundle runtime environment. This is not a container like Java Application Servers. It is a collaborative environment. Bundles run in the same VM and can actually share code. The framework uses the explicit imports and exports to wire up the bundles so they do not have to concern themselves with class loading. Another contrast with the application servers is that the management of the framework is standardized. A simple API allows bundles to install, start, stop, and update other bundles, as well as enumerating the bundles and their service usage. This API has been used by many management agents to control OSGi frameworks. Management agents are as diverse as the Knopflerfish desktop and an IBM Tivoli management server.
+
+![OSGi system layering](http://ghptech.github.io/doc/Osgi_framework.svg)
 
