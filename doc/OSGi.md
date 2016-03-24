@@ -12,8 +12,6 @@ The OSGi specification describes a modular system and a service platform for the
 
 The OSGi specifications have evolved beyond the original focus of service gateways, and are now used in applications ranging from mobile phones to the open-source Eclipse IDE. Other application areas include automobiles, industrial automation, building automation, PDAs, grid computing, entertainment, fleet management and application servers.
 
-#OSGi specification process
-
 The OSGi specification is developed by the members in an open process and made available to the public free of charge under the OSGI Sepcification License <https://www.osgi.org/Main/OSGiSpecificationLicense>.
 
 #OSGi architecture
@@ -31,12 +29,26 @@ The framework is conceptually divided into the following areas:
 ![OSGi framework](https://raw.githubusercontent.com/ghpopovici/openEMS/master/doc/layering-osgi.png)
 ![OSGi system layering](http://ghptech.github.io/doc/Osgi_framework.svg)
 
-##Modules
-Modularity is at the core of the OSGi specifications and embodied in the bundle concept. In Java terms, a bundle is a plain old JAR file. However, where in standard Java everything in a JAR is completely visible to all other JARs, OSGi hides everything in that JAR unless explicitly exported. A bundle that wants to use another JAR must explicitly import the parts it needs (no sharing by default).
+##Bundles
 
-Though the code hiding and explicit sharing provides many benefits (for example, allowing multiple versions of the same library being used in a single VM), the code sharing was only there to support OSGi services model. The services model is about bundles that collaborate.
+A bundle is a group of Java classes and additional resources equipped with a detailed manifest MANIFEST.MF file on all its contents, as well as additional services needed to give the included group of Java classes more sophisticated behaviors, to the extent of deeming the entire aggregate a component.
+Below is an example of a typical MANIFEST.MF file with OSGi Headers:
+
+`Bundle-Name: Hello World
+Bundle-SymbolicName: org.wikipedia.helloworld
+Bundle-Description: A Hello World bundle
+Bundle-ManifestVersion: 2
+Bundle-Version: 1.0.0
+Bundle-Activator: org.wikipedia.Activator
+Export-Package: org.wikipedia.helloworld;version="1.0.0"
+Import-Package: org.osgi.framework;version="1.3.0"`
 
 ![OSGi system layering](http://ghptech.github.io/doc/Osgi-system-layering.svg)
+
+##Modules
+Modularity is at the core of the OSGi specifications and embodied in the bundle concept. In Java terms, a bundle is a plain JAR file. However, where in standard Java everything in a JAR is completely visible to all other JARs, OSGi hides everything in that JAR unless explicitly exported. A bundle that wants to use another JAR must explicitly import the parts it needs (no sharing by default).
+
+Though the code hiding and explicit sharing provides many benefits (for example, allowing multiple versions of the same library being used in a single VM), the code sharing was only there to support OSGi services model. The services model is about bundles that collaborate.
 
 ##Services
 
