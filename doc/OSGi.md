@@ -42,6 +42,17 @@ Below is an example of a typical MANIFEST.MF file with OSGi Headers:
     Bundle-Activator: org.wikipedia.Activator
     Export-Package: org.wikipedia.helloworld;version="1.0.0"
     Import-Package: org.osgi.framework;version="1.3.0"  
+    
+The meaning of the contents in the example is as follows:
+
+* Bundle-Name: Defines a human-readable name for this bundle, Simply assigns a short name to the bundle.
+* Bundle-SymbolicName: The only required header, this entry specifies a unique identifier for a bundle, based on the reverse domain name convention (used also by the java packages).
+* Bundle-Description: A description of the bundle's functionality.
+* Bundle-ManifestVersion: Indicates the OSGi specification to use for reading this bundle.
+* Bundle-Version: Designates a version number to the bundle.
+* Bundle-Activator: Indicates the class name to be invoked once a bundle is activated.
+* Export-Package: Expresses which Java packages contained in a bundle will be made available to the outside world.
+* Import-Package: Indicates which Java packages will be required from the outside world to fulfill the dependencies needed in a bundle.
 
 ![OSGi system layering](http://ghptech.github.io/doc/Osgi-system-layering.svg)
 
