@@ -1,5 +1,7 @@
 ![OSGi](https://www.osgi.org/wp-content/uploads/logo.jpg)
-
+![Alt text](http://potherca.github.io/StackOverflow/question.13808020.include-an-svg-hosted-on-github-in-markdown/controllers_brief.svg)
+<img src="http://potherca.github.io/StackOverflow/question.13808020.include-an-svg-hosted-on-github-in-markdown/controllers_brief.svg">
+![Alt text](http://ghptech.github.io/doc/Osgi-system-layering.svg)<http://ghptech.github.io/doc/Osgi-system-layering.svg>
 The OSGi (Open Services Gateway initiative), is an open standards organization founded in March 1999 that originally specified and maintains the OSGi standard. 
 
 OSGi's vision is the emergence of applications from assembling (dynamically) different reusable components that have no a-priori knowledge of each other.
