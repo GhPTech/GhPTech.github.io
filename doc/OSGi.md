@@ -56,6 +56,12 @@ The meaning of the contents in the example is as follows:
 
 ![OSGi system layering](http://ghptech.github.io/doc/Osgi-system-layering.svg)
 
+##Life Cycle
+
+A Life Cycle layer adds bundles that can be dynamically installed, started, stopped, updated and uninstalled. Bundles rely on the module layer for class loading but add an API to manage the modules in run time. The life cycle layer introduces dynamics that are normally not part of an application. Extensive dependency mechanisms are used to assure the correct operation of the environment. Life cycle operations are fully protected with the security architecture.
+
+![OSGi system layering](http://ghptech.github.io/doc/OSGi_Bundle_Life-Cycle.svg)
+
 ##Modules
 Modularity is at the core of the OSGi specifications and embodied in the bundle concept. In Java terms, a bundle is a plain JAR file. However, where in standard Java everything in a JAR is completely visible to all other JARs, OSGi hides everything in that JAR unless explicitly exported. A bundle that wants to use another JAR must explicitly import the parts it needs (no sharing by default).
 
@@ -81,5 +87,5 @@ Though the service registry accepts any object as a service, the best way to ach
 
 Bundles are deployed on an OSGi framework, the bundle runtime environment. This is not a container like Java Application Servers. It is a collaborative environment. Bundles run in the same VM and can actually share code. The framework uses the explicit imports and exports to wire up the bundles so they do not have to concern themselves with class loading. Another contrast with the application servers is that the management of the framework is standardized. A simple API allows bundles to install, start, stop, and update other bundles, as well as enumerating the bundles and their service usage. This API has been used by many management agents to control OSGi frameworks. Management agents are as diverse as the Knopflerfish desktop and an IBM Tivoli management server.
 
-![OSGi system layering](http://ghptech.github.io/doc/OSGi_Bundle_Life-Cycle.svg)
+
 
