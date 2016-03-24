@@ -61,24 +61,6 @@ The meaning of the contents in the example is as follows:
 A Life Cycle layer adds bundles that can be dynamically installed, started, stopped, updated and uninstalled. Bundles rely on the module layer for class loading but add an API to manage the modules in run time. The life cycle layer introduces dynamics that are normally not part of an application. Extensive dependency mechanisms are used to assure the correct operation of the environment. Life cycle operations are fully protected with the security architecture.
 
 <table>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>		
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>		
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>		
-    <td>80</td>
-  </tr>
-</table>
-
-<table>
     <tr>
         <td>Bundle State</td>
         <td>Description</td>
@@ -108,6 +90,26 @@ A Life Cycle layer adds bundles that can be dynamically installed, started, stop
         <td>The bundle has been uninstalled. It cannot move into another state</td>
     </tr>
 </table>
+
+Below is an example of a typical Java class implementing the BundleActivator interface:
+
+    package org.wikipedia;
+        import org.osgi.framework.BundleActivator;
+        import org.osgi.framework.BundleContext;
+            public class Activator implements BundleActivator {
+                            private BundleContext context;
+                            @Override
+                            public void start(BundleContext context) throws Exception {
+                                System.out.println("Starting: Hello World");
+                                this.context = context;
+                            }
+                            @Override
+                            public void stop(BundleContext context) throws Exception {
+                                System.out.println("Stopping: Goodbye Cruel World");
+                                this.context = null;
+                            }
+            }
+
 
 ![OSGi system layering](http://ghptech.github.io/doc/OSGi_Bundle_Life-Cycle.svg)
 
