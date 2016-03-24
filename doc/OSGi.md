@@ -32,7 +32,7 @@ Modularity is at the core of the OSGi specifications and embodied in the bundle 
 
 Though the code hiding and explicit sharing provides many benefits (for example, allowing multiple versions of the same library being used in a single VM), the code sharing was only there to support OSGi services model. The services model is about bundles that collaborate.
 
-![Alt text](http://ghptech.github.io/doc/Osgi-system-layering.svg)<http://ghptech.github.io/doc/Osgi-system-layering.svg>
+![Alt text](http://ghptech.github.io/doc/Osgi-system-layering.svg)
 
 ##Services
 
