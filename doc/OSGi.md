@@ -19,6 +19,8 @@ Any framework that implements the OSGi standard provides an environment for the 
 
 The framework is conceptually divided into the following areas:
 
+![OSGi system layering](http://ghptech.github.io/doc/Osgi_framework.svg)
+
 * **Bundles/Plug-ins**  are OSGi (normal JARs) components with extra manifest headers (made by developers).
 * **Services** layer connects bundles in a dynamic way by offering a publish-find-bind model for Plain Old Java Interfaces (POJI) or Plain Old Java Objects (POJO).
 * **Life-Cycle** is the API (Application Programming Interface) employed to install, start, stop, update, and uninstall bundles.
@@ -27,9 +29,10 @@ The framework is conceptually divided into the following areas:
 * **Execution Environment** defines what methods and classes are available in a specific platform.
 
 ![OSGi framework](https://raw.githubusercontent.com/ghpopovici/openEMS/master/doc/layering-osgi.png)
-![OSGi system layering](http://ghptech.github.io/doc/Osgi_framework.svg)
 
 ##Bundles
+
+![OSGi system layering](http://ghptech.github.io/doc/Osgi-system-layering.svg)
 
 A bundle is a group of Java classes and additional resources equipped with a detailed manifest MANIFEST.MF file on all its contents, as well as additional services needed to give the included group of Java classes more sophisticated behaviors, to the extent of deeming the entire aggregate a component.
 Below is an example of a typical MANIFEST.MF file with OSGi Headers:
@@ -54,9 +57,9 @@ The meaning of the contents in the example is as follows:
 * Export-Package: Expresses which Java packages contained in a bundle will be made available to the outside world.
 * Import-Package: Indicates which Java packages will be required from the outside world to fulfill the dependencies needed in a bundle.
 
-![OSGi system layering](http://ghptech.github.io/doc/Osgi-system-layering.svg)
-
 ##Life Cycle
+
+![OSGi system layering](http://ghptech.github.io/doc/OSGi_Bundle_Life-Cycle.svg)
 
 A Life Cycle layer adds bundles that can be dynamically installed, started, stopped, updated and uninstalled. Bundles rely on the module layer for class loading but add an API to manage the modules in run time. The life cycle layer introduces dynamics that are normally not part of an application. Extensive dependency mechanisms are used to assure the correct operation of the environment. Life cycle operations are fully protected with the security architecture.
 
@@ -94,26 +97,23 @@ A Life Cycle layer adds bundles that can be dynamically installed, started, stop
 Below is an example of a typical Java class implementing the BundleActivator interface:
 
     package org.wikipedia;
-        import org.osgi.framework.BundleActivator;
-        import org.osgi.framework.BundleContext;
-            public class Activator implements BundleActivator {
-                            private BundleContext context;
-                            @Override
-                            public void start(BundleContext context) throws Exception {
-                                System.out.println("Starting: Hello World");
-                                this.context = context;
-                            }
-                            @Override
-                            public void stop(BundleContext context) throws Exception {
-                                System.out.println("Stopping: Goodbye Cruel World");
-                                this.context = null;
-                            }
+    import org.osgi.framework.BundleActivator;
+    import org.osgi.framework.BundleContext;
+    public class Activator implements BundleActivator {
+        private BundleContext context;
+        @Override
+        public void start(BundleContext context) throws Exception {
+            System.out.println("Starting: Hello World");
+            this.context = context;
             }
+        @Override
+        public void stop(BundleContext context) throws Exception {
+            System.out.println("Stopping: Goodbye Cruel World");
+            this.context = null;
+            }
+    }
 
 
-![OSGi system layering](http://ghptech.github.io/doc/OSGi_Bundle_Life-Cycle.svg)
-
-![OSGi system layering](http://ghptech.github.io/doc/OSGi_Bundle_Life-Cycle.svg)
 
 ##Modules
 Modularity is at the core of the OSGi specifications and embodied in the bundle concept. In Java terms, a bundle is a plain JAR file. However, where in standard Java everything in a JAR is completely visible to all other JARs, OSGi hides everything in that JAR unless explicitly exported. A bundle that wants to use another JAR must explicitly import the parts it needs (no sharing by default).
