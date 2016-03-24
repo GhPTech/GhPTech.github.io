@@ -34,14 +34,14 @@ The framework is conceptually divided into the following areas:
 A bundle is a group of Java classes and additional resources equipped with a detailed manifest MANIFEST.MF file on all its contents, as well as additional services needed to give the included group of Java classes more sophisticated behaviors, to the extent of deeming the entire aggregate a component.
 Below is an example of a typical MANIFEST.MF file with OSGi Headers:
 
-`Bundle-Name: Hello World
-Bundle-SymbolicName: org.wikipedia.helloworld
-Bundle-Description: A Hello World bundle
-Bundle-ManifestVersion: 2
-Bundle-Version: 1.0.0
-Bundle-Activator: org.wikipedia.Activator
-Export-Package: org.wikipedia.helloworld;version="1.0.0"
-Import-Package: org.osgi.framework;version="1.3.0"`
+    Bundle-Name: Hello World
+    Bundle-SymbolicName: org.wikipedia.helloworld
+    Bundle-Description: A Hello World bundle
+    Bundle-ManifestVersion: 2
+    Bundle-Version: 1.0.0
+    Bundle-Activator: org.wikipedia.Activator
+    Export-Package: org.wikipedia.helloworld;version="1.0.0"
+    Import-Package: org.osgi.framework;version="1.3.0"  
 
 ![OSGi system layering](http://ghptech.github.io/doc/Osgi-system-layering.svg)
 
