@@ -60,21 +60,71 @@ The meaning of the contents in the example is as follows:
 
 A Life Cycle layer adds bundles that can be dynamically installed, started, stopped, updated and uninstalled. Bundles rely on the module layer for class loading but add an API to manage the modules in run time. The life cycle layer introduces dynamics that are normally not part of an application. Extensive dependency mechanisms are used to assure the correct operation of the environment. Life cycle operations are fully protected with the security architecture.
 
-- - -
-Bundle State    Description
-- - -
-INSTALLED       The bundle has been successfully installed.
-- - -
-RESOLVED        All Java classes that the bundle needs are available. This state indicates that the bundle is either ready to be started or has stopped.
-- - -
-STARTING	    The bundle is being started, the BundleActivator.start method has been called but the start method has not yet returned. When the bundle has an activation policy, the bundle will remain in the STARTING state until the bundle is activated according to its activation policy.
-- - -
-ACTIVE	        The bundle has been successfully activated and is running; its Bundle Activator start method has been called and returned.
-- - -
-STOPPING	    The bundle is being stopped. The BundleActivator.stop method has been called but the stop method has not yet returned.
-- - -
-UNINSTALLED     The bundle has been uninstalled. It cannot move into another state.
-- - 
+<table>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>		
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>		
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>		
+    <td>80</td>
+  </tr>
+</table>
+
+<table>
+    <tr>
+        <td>
+            Bundle State
+        </td>
+        <td>
+            Description
+        </td>
+    </tr>
+    <tr>
+        <td>
+            INSTALLED
+        </td>
+        <td>
+            The bundle has been successfully installed
+        <\td>
+    </tr>
+    <tr>
+        <td>
+            RESOLVED
+        <\td>        
+        <td>
+            All Java classes that the bundle needs are available. This state indicates that the bundle is either ready to be started or has stopped
+            <\td>
+    <\tr>
+    <tr>
+        <td>
+            STARTING
+        <\td>	    
+        <td>
+            The bundle is being started, the BundleActivator.start method has been called but the start method has not yet returned. When the bundle has an activation policy, the bundle will remain in the STARTING state until the bundle is activated according to its activation policy
+        <\td>
+    <\tr>
+    <tr>
+        <td>ACTIVE<\td>	        
+        <td>The bundle has been successfully activated and is running; its Bundle Activator start method has been called and returned<\td>
+    <\tr>
+    <tr>
+        <td>STOPPING<\td>
+        <td>The bundle is being stopped. The BundleActivator.stop method has been called but the stop method has not yet returned<\td>
+    <\tr>
+    <tr>
+        <td>UNINSTALLED<\td>     
+        <td>The bundle has been uninstalled. It cannot move into another state<\td>
+    <\tr>
+</table>
+
 ![OSGi system layering](http://ghptech.github.io/doc/OSGi_Bundle_Life-Cycle.svg)
 
 ![OSGi system layering](http://ghptech.github.io/doc/OSGi_Bundle_Life-Cycle.svg)
