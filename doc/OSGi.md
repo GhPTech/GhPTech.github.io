@@ -111,8 +111,6 @@ Below is an example of a typical Java class implementing the BundleActivator int
             }
     }
 
-
-
 ##Modules
 Modularity is at the core of the OSGi specifications and embodied in the bundle concept. In Java terms, a bundle is a plain JAR file. However, where in standard Java everything in a JAR is completely visible to all other JARs, OSGi hides everything in that JAR unless explicitly exported. A bundle that wants to use another JAR must explicitly import the parts it needs (no sharing by default).
 
