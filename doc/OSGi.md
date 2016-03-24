@@ -17,10 +17,9 @@ The OSGi specifications have evolved beyond the original focus of service gatewa
 The OSGi specification is developed by the members in an open process and made available to the public free of charge under the OSGI Sepcification License <https://www.osgi.org/Main/OSGiSpecificationLicense>.
 
 #OSGi architecture
+Any framework that implements the OSGi standard provides an environment for the modularization of applications into smaller bundles. Each bundle is a tightly coupled, dynamically loadable collection of classes, jars, and configuration files that explicitly declare their external dependencies.
 
-##Layering
-
-The components of the OSGi architecture consist of:
+The framework is conceptually divided into the following areas:
 
 * **Bundles/Plug-ins**  are OSGi (normal JARs) components with extra manifest headers (made by developers).
 * **Services** layer connects bundles in a dynamic way by offering a publish-find-bind model for Plain Old Java Interfaces (POJI) or Plain Old Java Objects (POJO).
