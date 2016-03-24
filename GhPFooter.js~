@@ -1,0 +1,11 @@
+document.getElementById("GhPFooterScript").innerHTML =
+"<a href='index.html#GhPHome' title='To Top'>"+
+"<span class='glyphicon glyphicon-chevron-up'></span>"+
+"</a>"+
+"<p>Designed and maintained by </p>"+
+"<a href='index.html#contact' title='Visit GhP'><img src='images/GhP_profile.png' alt='GhP' style='width:18px;height:39px';></a>"+
+"<br>"+
+"<a href='index.html#contact' title='Visit GhP'>GhP</a>"+
+"<br>"+
+"<a rel='license' href='http://creativecommons.org/licenses/by-nc/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by-nc/4.0/88x31.png' /></a>"+
+//"<p>Based on tutorials, references, and examples at <br> <a href='http://www.w3schools.com'>www.w3schools.com</a></p>";
