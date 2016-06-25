@@ -21,4 +21,4 @@ Allow: /*
 
 
 # Sitemap (Update with your Domain, if you have a sitemap)
-Sitemap: http://ghptech.github.io/sitemap.xml
+Sitemap: http://www.ghp.tech/sitemap.xml
