@@ -174,7 +174,7 @@
 </div>
 
 <!-- Container (Portfolio Section) -->		
-  <div id="portfolio" class="container-fluid text-center">
+  <div id="GhPportfolio" class="container-fluid text-center">
     <h2>Portfolio</h2>
     <h4>Previous projects</h4>
     <div id="GhPCarousel" class="carousel slide text-center" data-ride="carousel">
