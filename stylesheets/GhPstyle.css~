@@ -41,7 +41,7 @@ body {
       font-size: 200px;
   }
   /* Dropdown Content (Hidden by Default) */
-.dropdown-menu {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
