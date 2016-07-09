@@ -68,7 +68,7 @@
 		<ul class="nav navbar-nav">
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-					<span class="glyphicon glyphicon-globe icon" aria-hidden="true"></span>
+					<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
 					<span class="caret"></span>
 				</a>
 			<ul class="dropdown-menu">
@@ -118,8 +118,8 @@
   
     <div class="col-sm-8">
       <h2>PREZENTARE</h2>
-        <h4>GhP  oferă <strong>servicii de consultanţă</strong> in domeniul <strong>Ingineriei</strong>.</h4>
-        <p>Domeniile de competenta includ <strong>Modelarea</strong>, <strong>Simularile</strong>, <strong>Dezvoltarea de software</strong>, <strong>Conceptia pentru Sase Sigma (DfSS)</strong> si <strong>Inteligenta Artificiala</strong>.</p>
+        <h4>GhP  oferă <strong>servicii de consultanţă in inginerie</strong> in domeniul <strong>Tribologiei</strong> şi al <strong>Informaticii</strong>.</h4>
+        <p>Domeniile de competenţă includ <strong>modelarea</strong>, <strong>simularile</strong>, <strong>dezvoltarea de software</strong>, <strong>conceptia pentru şase sigma (DfSS)</strong> şi <strong>inteligenta artificială</strong>.</p>
       <!--<br><button class="btn btn-default btn-lg" >Get in Touch</button>-->
       <!-- <br><a target="_blank" href="contactForm.php" class="btn btn-lg" role="button">Get in Touch</a> -->
     </div>
