@@ -119,8 +119,8 @@
   
     <div class="col-sm-8">
       <h2>About</h2>
-        <h4>GhP offers <strong>engineering consultancy services</strong> in the field of <strong>Tribology</strong> and <strong>Information Technology</strong>.</h4><br> 
-        <p>The areas of competence include <strong>Modelling &#38 Simulations</strong>, <strong>Software Development</strong>, <strong>Design for Six Sigma</strong>, <strong>Artificial Intelligence</strong> and <strong>Energy Management</strong>.</p> 
+        <h4>GhP offers <strong>engineering consultancy services</strong> in the field of <strong>Thermodynamics</strong>, <strong>Tribology</strong> and <strong>Information Technology</strong>.</h4><br> 
+        <p>The areas of competence include <strong>Modelling</strong>, <strong>Simulations</strong>, <strong>Software Development</strong>, <strong>Design for Six Sigma</strong>, <strong>Artificial Intelligence</strong> and <strong>Energy Management</strong>.</p> 
       <!--<br><button class="btn btn-default btn-lg" >Get in Touch</button>-->
       <!-- <br><a target="_blank" href="contactForm.php" class="btn btn-lg" role="button">Get in Touch</a> -->
     </div>
