@@ -159,7 +159,7 @@ body {
   }
   a:link    {color:blue; background-color:transparent; text-decoration:none}
   a:visited {color:#696969; background-color:transparent; text-decoration:none}
-  a:hover   {color:green; background-color:transparent; text-decoration:none}
+  a:hover   {color:blueviolet; background-color:transparent; text-decoration:none}
   a:active  {color:red; background-color:transparent; text-decoration:none}
   
   @keyframes slide {
