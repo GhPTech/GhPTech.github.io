@@ -271,7 +271,7 @@
 <div id="GhPoffers" class="container-fluid">
   <div class="text-center">
     <h2>Oferte</h2>
-    <h4>Alegeti un pachet adaptat nevoilor dumneavostra.</h4>
+    <h4>Alegeţii un pachet adaptat nevoilor dumneavostră.</h4>
   </div>
   <div class="row">
     <div class="col-sm-4 col-xs-12 slideanim">
@@ -282,7 +282,7 @@
         <div class="panel-body">
           <p><strong>Evaluari</strong></p>
           <p><strong>Audituri</strong></p>
-          <p><strong>Examinari</strong></p>
+          <p><strong>Examinări</strong></p>
         </div>
         <div class="panel-footer">
           <h3>&euro;642</h3>
@@ -303,7 +303,7 @@
         </div>
         <div class="panel-footer">
           <h3>&euro;2568</h3>
-          <h4>pe saptamana</h4>
+          <h4>pe săptamană</h4>
           <!--<button class="btn btn-lg">Sign Up</button>-->
         </div>
       </div>
@@ -316,7 +316,7 @@
         <div class="panel-body">
           <p><strong>Dezvoltare tehnologii</strong></p>
           <p><strong>Dezvoltare software</strong></p>
-          <p><strong>Conceptie pentru Sase Sigma</strong></p>
+          <p><strong>Concepţie pentru  Şase Sigma</strong></p>
         </div>
         <div class="panel-footer">
           <h3>&euro;30816</h3>
@@ -349,7 +349,7 @@
   <a href="#GhPpage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Intretinut de</p> 
+  <p>Înntreţinut de</p> 
   <a href="#GhPcontact"><h1>GhP</h1></a>
   <!--<p>Based on templates from <a href="http://www.w3schools.com" title="Visit w3schools">w3schools.com</a></p>-->
 </footer>
