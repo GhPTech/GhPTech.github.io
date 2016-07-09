@@ -80,12 +80,13 @@
 		</ul>
     	
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#GhPabout" style="text-transform: uppercase">About</a></li>
-        <li><a href="#GhPservices" style="text-transform: uppercase">Services</a></li>
-        <li><a href="#GhPportfolio" style="text-transform: uppercase">Portfolio</a></li>
-        <li><a href="#GhPoffers" style="text-transform: uppercase">Offers</a></li>
-        <li><a href="#GhPcontact" style="text-transform: uppercase">Contact</a></li>
+        <li><a href="#GhPabout" >About</a></li>
+        <li><a href="#GhPservices" >Services</a></li>
+        <li><a href="#GhPportfolio" >Portfolio</a></li>
+        <li><a href="#GhPoffers" >Offers</a></li>
+        <li><a href="#GhPcontact" >Contact</a></li>
       </ul>
+      
       
     </div>
   </div>
