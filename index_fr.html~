@@ -349,8 +349,10 @@
   <a href="#GhPpage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Maintenu par</p> 
-  <a href="#GhPcontact"><h1>GhP</h1></a>
+  <p>Avec le support de</p> 
+  <img src="images/LinuxLogo.svg" alt="Linux" style="width:60px;height:50px;">
+  <!--<embed type='image/svg+xml' src='images/GhPgears.svg' />-->
+  <!--<a href="#GhPcontact"><h1>GhP</h1></a>-->
   <!--<p>Based on templates from <a href="http://www.w3schools.com" title="Visit w3schools">w3schools.com</a></p>-->
 </footer>
 
