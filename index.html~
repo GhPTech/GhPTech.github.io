@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   
-  <title>Gheorghita Popovici</title>
+  <title>George Popovici</title>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Keywords" content="technology, engineering, modelling, simulations, design for six sigma, DfSS, artificial intelligence, energy management, technical trainings">
-  <meta name="description" content="Engineering consultancy services">
+  <meta name="Keywords" content="engineering, tribology, modelling, simulations, design for six sigma, DfSS, artificial intelligence, technical trainings">
+  <meta name="description" content="Tribology and beyond">
   <meta name="author" content="Gheorghita Popovici" >
   
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -95,7 +95,7 @@
 <div class="jumbotron text-center">
   <!-- <h1>GhP</h1> -->
   <div id="GhPmotto">
-    <p>Technology^1000 and beyond</p>
+    <p>Tribology^1000 and beyond</p>
  </div>
  <span id="typed"></span>
   
